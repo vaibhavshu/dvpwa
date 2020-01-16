@@ -6,16 +6,21 @@ application:
   webservice: false
   restApi: false
   microservice: false
+  frameworks: 
+   - Python security
+   - Core Python
+  javaVersion: NoJava
+  buildSystem: NoBuild
   riskMatrixRevision: Rev1.0
-  sourceFilePattern: ".*\\+\\+\\+.*(\\.py|\\.py)+.*"
+  sourceFilePattern: ".*\\+\\+\\+.*(\\.java|\\.jsp)+.*"
   sensitivePackagePattern: ".*(\\+\\+\\+.*(org\\/hdivsamples\\/security)).*"
   fileChangeThreshold: 20
 
 environment:
   bitbucketOwner: sig-devsecops
-  bitbucketRepositoryName: PythonApp
+  bitbucketRepositoryName: InsecureBank
   bitbucketBranchName: master
-  testDeploymentRoot: "pythonApp"
+  testDeploymentRoot: "insecure-bank"
   imChannelIdentifier: "#stargazer-notifications"
   jiraProjectName: "DEM"
   jiraIssuesQuery: "resolution = \"Unresolved\" AND labels in (Security, Defect)"
