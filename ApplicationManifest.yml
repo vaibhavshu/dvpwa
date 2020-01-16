@@ -7,7 +7,7 @@ application:
   restApi: false
   microservice: false
   riskMatrixRevision: Rev1.0
-  sourceFilePattern: ".*\\+\\+\\+.*(\\.java|\\.jsp)+.*"
+  sourceFilePattern: ".*\\+\\+\\+.*(\\.py|\\.py)+.*"
   sensitivePackagePattern: ".*(\\+\\+\\+.*(org\\/hdivsamples\\/security)).*"
   fileChangeThreshold: 20
 
