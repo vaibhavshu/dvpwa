@@ -1,0 +1,21 @@
+application:
+  appId: Python123
+  assetId: Python123
+  sdlcType: EDM
+  appType: Webapp
+  webservice: false
+  restApi: false
+  microservice: false
+  riskMatrixRevision: Rev1.0
+  sourceFilePattern: ".*\\+\\+\\+.*(\\.java|\\.jsp)+.*"
+  sensitivePackagePattern: ".*(\\+\\+\\+.*(org\\/hdivsamples\\/security)).*"
+  fileChangeThreshold: 20
+
+environment:
+  bitbucketOwner: sig-devsecops
+  bitbucketRepositoryName: PythonApp
+  bitbucketBranchName: master
+  testDeploymentRoot: "pythonApp"
+  imChannelIdentifier: "#stargazer-notifications"
+  jiraProjectName: "DEM"
+  jiraIssuesQuery: "resolution = \"Unresolved\" AND labels in (Security, Defect)"
