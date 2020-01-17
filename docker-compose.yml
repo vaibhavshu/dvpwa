@@ -19,6 +19,6 @@ services:
       - postgres
       - redis
     ports:
-      - 8080:8080
+      - 8099:8099
     command: |
       wait-for postgres:5431 -- python run.py
